@@ -16,34 +16,22 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
 		// add our users for in memory authentication
-		
+
 		UserBuilder users = User.withDefaultPasswordEncoder();
-		
-		auth.inMemoryAuthentication()
-			.withUser(users.username("john").password("test123").roles("EMPLOYEE"))
-			.withUser(users.username("mary").password("test123").roles("MANAGER"))
-			.withUser(users.username("susan").password("test123").roles("ADMIN"));
+
+		auth.inMemoryAuthentication().withUser(users.username("john").password("test123").roles("EMPLOYEE"))
+				.withUser(users.username("mary").password("test123").roles("MANAGER"))
+				.withUser(users.username("susan").password("test123").roles("ADMIN"));
 	}
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
-		http.authorizeRequests()
-				.anyRequest().authenticated()
-			.and()
-			.formLogin()
-				.loginPage("/showMyLoginPage")
-				.loginProcessingUrl("/authenticateTheUser")
-				.permitAll()
-			.and()
-			.logout().permitAll().and().exceptionHandling().accessDeniedPage("/anubhav");
-		
+		http.authorizeRequests().anyRequest().authenticated().and().formLogin().loginPage("/showMyLoginPage")
+				.loginProcessingUrl("/authenticateTheUser").permitAll().and()
+
+				.logout().permitAll().and().exceptionHandling().accessDeniedPage("/yash");
+
 	}
-		
+
 }
-
-
-
-
-
-
