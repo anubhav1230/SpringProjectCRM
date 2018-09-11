@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.validation;
+package com.code.springdemo.validation;
 
 import static java.lang.annotation.RetentionPolicy.*;
 

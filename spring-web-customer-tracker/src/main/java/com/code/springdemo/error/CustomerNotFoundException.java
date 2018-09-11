@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.error;
+package com.code.springdemo.error;
 
 public class CustomerNotFoundException extends RuntimeException {
 

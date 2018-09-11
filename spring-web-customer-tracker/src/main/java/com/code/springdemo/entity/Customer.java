@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.entity;
+package com.code.springdemo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import com.luv2code.springdemo.validation.EmailCode;
+import com.code.springdemo.validation.EmailCode;
 
 //@Audited
 @Entity
