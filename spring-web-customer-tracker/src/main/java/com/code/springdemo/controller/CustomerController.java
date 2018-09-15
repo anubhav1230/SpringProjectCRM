@@ -32,7 +32,7 @@ public class CustomerController {
 		// get the lsit of customer from service layer
 		List<Customer> theCustomer = customerService.getCustomers();
 
-		// add data to model and pass it to view
+		// add data to model and pass it to view.
 
 		theModel.addAttribute("customers", theCustomer);
 
@@ -136,7 +136,7 @@ public class CustomerController {
 
 			}
 
-		}
+		} 
 		return false;
 	}
 }
