@@ -32,9 +32,9 @@
 			<!-- zeroDateTimeBehavior=convertToNull&amp;-->		
 			<property name="driverClass" value="com.mysql.jdbc.Driver" />
 		<property name="jdbcUrl"
-			value="jdbc:mysql://springonaws-db.com6izjhrroc.us-east-2.rds.amazonaws.com/web_customer_tracker?useSSL=false" />
-		<property name="user" value="springstudent" />
-		<property name="password" value="springstudent" />
+			value="jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false" />
+		<property name="user" value="root" />
+		<property name="password" value="root" />
 
 		<!-- these are connection pool properties for C3P0 -->
 		<property name="minPoolSize" value="5" />
